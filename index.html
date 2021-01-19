@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalCulator AppliCation</title>
+</head>
+<body>
+    <div style="background-color: black; text-align: center; margin-top: 300px; margin-left:420px; border-radius: 50px; margin-right: 420px;" >
+   <br>
+    <h1 style="color: white; text-decoration: underline grey;" onmouseover="this.style.color='grey',this.style.textDecoration='underline'" onmouseout="this.style.color='white',this.style.textDecoration='underline'"  >"CalCulator AppliCation"</h1>
+    <br>
+    <div><input onmouseover="this.style.backgroundColor='white',this.style.color='black'" onmouseout="this.style.backgroundColor='black',this.style.color='white'" style="color: white;background-color: black ; border-radius: 30px; height: 35px; width: 400px;" type="text" name="Calc" id="result"></div>
+    <br>
+    <div>
+        <button onmouseover="this.style.backgroundColor='blue',this.style.color='white'" onmouseout="this.style.backgroundColor='red',this.style.color='white'" style="color: white;background-color: red ; border-radius: 30px;  height: 35px; width: 408px;" onclick="clearValue()">CE</button>
+    </div>
+    <br>
+    <div> 
+        <button onmouseover="this.style.backgroundColor='grey',this.style.color='white'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.897)',this.style.color='blue'" style="color: blue; background-color: rgba(255, 255, 255, 0.897); border-radius: 30px; width: 98px;height: 28px;" onclick="GetValue('7')">7</button>
+        <button onmouseover="this.style.backgroundColor='grey',this.style.color='white'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.897)',this.style.color='blue'" style="color: blue; background-color: rgba(255, 255, 255, 0.897); border-radius: 30px; width: 98px;height: 28px;" onclick="GetValue('8')">8</button>
+        <button onmouseover="this.style.backgroundColor='grey',this.style.color='white'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.897)',this.style.color='blue'" style="color: blue; background-color: rgba(255, 255, 255, 0.897); border-radius: 30px; width: 98px;height: 28px;" onclick="GetValue('9')">9</button>
+        <button onmouseover="this.style.backgroundColor='green',this.style.color='white'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.897)',this.style.color=''" style="color: blue; background-color: rgba(255, 255, 255, 0.897); border-radius: 30px; width: 98px;height: 28px;" onclick="GetValue('*')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj08nDflRQpmXTMSu8pnF0ZsTO2XqbVMh5XQ&usqp=CAU" width="12px" height="12px" alt=""></button>
+    </div>
+    <br >
+    <div>
+        <button onmouseover="this.style.backgroundColor='grey',this.style.color='white'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.897)',this.style.color='blue'" style="color: blue; background-color: rgba(255, 255, 255, 0.897); border-radius: 30px; width: 98px;height: 28px;" onclick="GetValue('4')">4</button>
+        <button onmouseover="this.style.backgroundColor='grey',this.style.color='white'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.897)',this.style.color='blue'" style="color: blue; background-color: rgba(255, 255, 255, 0.897); border-radius: 30px; width: 98px;height: 28px;" onclick="GetValue('5')">5</button>
+        <button onmouseover="this.style.backgroundColor='grey',this.style.color='white'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.897)',this.style.color='blue'" style="color: blue; background-color: rgba(255, 255, 255, 0.897); border-radius: 30px; width: 98px;height: 28px;" onclick="GetValue('6')">6</button>
+        <button onmouseover="this.style.backgroundColor='green',this.style.color='white'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.897)',this.style.color=''" style="color: blue; background-color: rgba(255, 255, 255, 0.897); border-radius: 30px; width: 98px;height: 28px;" onclick="GetValue('-')"><img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX10743292.jpg"width="12px" height="12px" alt=""></button>
+    </div>
+    <br>
+    <div>
+        <button onmouseover="this.style.backgroundColor='grey',this.style.color='white'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.897)',this.style.color='blue'" style="color: blue; background-color: rgba(255, 255, 255, 0.897); border-radius: 30px; width: 98px;height: 28px;" onclick="GetValue('1')">1</button>
+        <button onmouseover="this.style.backgroundColor='grey',this.style.color='white'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.897)',this.style.color='blue'" style="color: blue; background-color: rgba(255, 255, 255, 0.897); border-radius: 30px; width: 98px;height: 28px;" onclick="GetValue('2')">2</button>
+        <button onmouseover="this.style.backgroundColor='grey',this.style.color='white'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.897)',this.style.color='blue'" style="color: blue; background-color: rgba(255, 255, 255, 0.897); border-radius: 30px; width: 98px;height: 28px;" onclick="GetValue('3')">3</button>
+        <button onmouseover="this.style.backgroundColor='green',this.style.color='white'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.897)',this.style.color=''" style="color: blue; background-color: rgba(255, 255, 255, 0.897); border-radius: 30px; width: 98px;height: 28px;" onclick="GetValue('+')"><img src="https://www.shareicon.net/data/256x256/2015/09/22/644510_add_512x512.png" alt="" width="12px" height="12px"></button>
+    </div>
+    <br>
+    <div>
+        <button onmouseover="this.style.backgroundColor='grey',this.style.color='white'" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.897)',this.style.color='blue'" style="color: blue; background-color: rgba(255, 255, 255, 0.897); border-radius: 30px; width: 201px;height: 28px;" onclick="GetValue('0')">0</button>
+        <button onmouseover="this.style.backgroundColor='red',this.style.color='white'" onmouseout="this.style.backgroundColor='blue',this.style.color='white'" style="color: white; background-color: blue; border-radius: 30px; width: 201px;height: 28px;" onclick="getCompleteValue('=')">=</button>
+    </div>
+    <br>
+</div>
+</body>
+<script src="app.js"></script>
+</html>
